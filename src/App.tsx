@@ -19,7 +19,7 @@ type Selection = {
 } | null
 
 function App() {
-    const [agent, setAgent] = useState<Agent | null>(null);
+    const [agent, setAgent] = useState<Agent | null>(agent1);
     const [selection, setSelection] = useState<Selection | null>(null);
 
     const setSelectedConnection = (connectionId: number | null) => setSelection(connectionId === null ? null : {
